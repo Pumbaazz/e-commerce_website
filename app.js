@@ -1,23 +1,24 @@
+const express = require('express');
+const app = express();
+
 var createError = require('http-errors');
-var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var bodyParser = require('body-parser')
 var expressHbs = require('express-handlebars')
-var mongoose = require('mongoose')
+var flash = require('connect-flash');
+var session = require('express-session');
+var passport = require('passport');
 
+//mongodb setup
+const mongoose = require('mongoose');
+var mongoConnectionString ="mongodb://localhost:27017/ecommerce";
+mongoose.connect(mongoConnectionString, {useNewUrlParser: true, useUnifiedTopology: true});
 
-// var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 var routes = require('./routes/index')
 
-var app = express();
-
-mongoose.connect('localhost:27017/ecommerce');
-
 // view engine setup
-// app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname:'.hbs'}))
 app.set('view engine', '.hbs');
 
@@ -28,8 +29,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('public'));
 
+// app.use(flash())
+// app.use((req, res, next) => {
+//   res.locals.success_mesages = req.flash('success')
+//   res.locals.error_messages = req.flash('error')
+//   next()
+// })
+ 
+
 app.use('/', routes);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
