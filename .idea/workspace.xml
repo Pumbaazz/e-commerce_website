@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3f19670-95bb-4e8c-ac98-c1221a0aba26" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seed/product-seeder.js" beforeDir="false" afterPath="$PROJECT_DIR$/seed/product-seeder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/homepage/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/views/homepage/index.hbs" afterDir="false" />
-    </list>
+    <list default="true" id="b3f19670-95bb-4e8c-ac98-c1221a0aba26" name="Default Changelist" comment="finish load from mongodb, but something went wrong in display &#10;product" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,11 +59,41 @@
       <workItem from="1620613391039" duration="5455000" />
       <workItem from="1620618901914" duration="6069000" />
       <workItem from="1620642691024" duration="602000" />
-      <workItem from="1620746302515" duration="8515000" />
+      <workItem from="1620746302515" duration="8761000" />
     </task>
+    <task id="LOCAL-00001" summary="finish load from mongodb, but something went wrong in display &#10;product">
+      <created>1620756700534</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620756700534</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finish load from mongodb, but something went wrong in display &#10;product">
+      <created>1620756713719</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620756713719</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish load from mongodb, but something went wrong in display &#10;product" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish load from mongodb, but something went wrong in display &#10;product" />
   </component>
 </project>

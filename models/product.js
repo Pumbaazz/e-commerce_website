@@ -2,11 +2,12 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 
-var Product = new Schema({
-    url:String,
-    p_name: String,
-    p_desc: String,
-    quantity: Number
+var productSchema = new Schema({
+    id:{type:String, required:true},
+    url:{type: String, required:true},
+    p_name: {type: String, required:true},
+    p_desc: {type: String, required:true},
+    quantity: {type: Number, required:true}
 },{collection:'mockup'});
 
-module.exports = mongoose.model('Product', Product)
+module.exports = mongoose.model('Product', productSchema)
