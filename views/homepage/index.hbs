@@ -1,20 +1,27 @@
-
 <!--<p>{{title}}</p>-->
 
-{{# each Product}}
+{{#each Product}}
+    1
+{{/each}}
+
+{{#each Product}}
     <div class="row">
         {{#each this}}
             <div class="col-sm-4">
                 <div class="card" style="width: 18rem;">
-                <img src="{{{this.url}}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{{this.p_name}}}</h5>
-                    <p class="card-text">{{{this.p_desc}}}</p>
-                    <span>{{{this.quantity}}}</span>
-                    <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+                    <img src="{{{this.url}}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{{this.p_name}}}</h5>
+                        <p class="card-text">{{{this.p_desc}}}</p>
+                        <span>{{{this.quantity}}}</span>
+                        <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </div>      
+        {{!-- <p>{{{this.url}}}</p>
+        <p>{{{this.p_name}}}</p>
+        <p>{{{this.p_desc}}}</p>
+        <p>{{{this.quantity}}}</p> --}}
         {{/each}}
     </div>
 {{/each}}
